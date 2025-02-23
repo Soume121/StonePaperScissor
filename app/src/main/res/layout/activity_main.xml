@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- User choice -->
+    <ImageView
+        android:id="@+id/userChoiceImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="User Choice" />
+
+    <!-- Computer choice -->
+    <ImageView
+        android:id="@+id/computerChoiceImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/userChoiceImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Computer Choice" />
+
+    <!-- Result text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computerChoiceImageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/make_your_move"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- You choose Text -->
+    <TextView
+        android:id="@+id/youChooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultTextView"
+        android:layout_centerHorizontal="true"
+        android:text="You choose:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Computer choose Text -->
+    <TextView
+        android:id="@+id/computerChooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/youChooseTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Computer choose:"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/stoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stone"
+        android:layout_below="@id/computerChooseTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paper"
+        android:layout_below="@id/computerChooseTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scissors"
+        android:layout_below="@id/computerChooseTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

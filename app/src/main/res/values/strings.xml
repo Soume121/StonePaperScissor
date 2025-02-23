@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">stonepaperscissors</string>
+    <string name="todo">TODO</string>
+    <string name="paper">Paper</string>
+    <string name="make_your_move">Make your move!</string>
+    <string name="scissors">Scissors</string>
+    <string name="stone">Stone</string>
+</resources>
